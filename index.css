@@ -19,11 +19,11 @@ header {
 }
 
 header h1 {
-  font-size: 3.75rem; /* 60px */
+  font-size: 3.75rem;
   font-weight: bold;
 }
 
-header .subtitle {
+.subtitle {
   margin-top: 0.5rem;
   font-size: 0.875rem;
   color: #d1b3ff;
