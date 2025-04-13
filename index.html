@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LeCouz</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body class="bg-gradient-to-b from-purple-900 to-black text-white min-h-screen">
-    <div class="text-center py-12 px-4">
-      <h1 class="text-6xl font-bold">LeCouz</h1>
-      <p class="text-purple-200 text-sm mt-2">Créateur de Contenu | Streamer | YouTuber</p>
-      <img src="https://via.placeholder.com/120" alt="Profil" class="mx-auto rounded-full border-4 border-white w-24 h-24 object-cover mt-8" />
-      <p class="max-w-2xl mx-auto mt-6 text-white text-sm">
-        Bienvenue sur mon univers ! Je partage ma passion du gaming et du divertissement à travers mes streams et vidéos.
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeCouz - Créateur de Contenu</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <h1>LeCouz</h1>
+    <p class="subtitle">Créateur de Contenu | Streamer | YouTuber</p>
+    <img src="images/profil.jpg" alt="Photo de profil" class="profile-pic">
+    <p class="intro">Bienvenue sur mon univers ! Je partage ma passion du gaming et du divertissement à travers mes streams et vidéos.</p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <img src="images/stream.jpg" alt="Stream">
+      <h3>Mes Streams</h3>
+      <p>Rejoignez-moi en direct pour des moments de gaming inoubliables !</p>
+      <a href="#" class="tiktok">Suivre sur TikTok</a>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 pb-12">
-      <!-- TikTok Card -->
-      <div class="bg-purple-800/30 backdrop-blur-sm rounded-lg p-6 shadow-xl">
-        <img src="https://via.placeholder.com/300x170/9900FF/000000?text=Stream" alt="Stream" class="rounded-md mb-4" />
-        <h2 class="text-xl font-semibold mb-2">Mes Streams</h2>
-        <p class="text-sm text-white/80 mb-4">Rejoignez-moi en direct pour des moments de gaming inoubliables !</p>
-        <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 transition-colors px-4 py-2 rounded-md font-semibold text-sm">Suivre sur TikTok</a>
-      </div>
-
-      <!-- YouTube Card -->
-      <div class="bg-purple-800/30 backdrop-blur-sm rounded-lg p-6 shadow-xl">
-        <img src="https://via.placeholder.com/300x170/FF0000/000000?text=YouTube" alt="YouTube" class="rounded-md mb-4" />
-        <h2 class="text-xl font-semibold mb-2">Mes Vidéos</h2>
-        <p class="text-sm text-white/80 mb-4">Du contenu gaming exclusif et des moments épiques !</p>
-        <a href="#" class="inline-block bg-red-600 hover:bg-red-700 transition-colors px-4 py-2 rounded-md font-semibold text-sm">Voir sur YouTube</a>
-      </div>
-
-      <!-- Instagram Card -->
-      <div class="bg-purple-800/30 backdrop-blur-sm rounded-lg p-6 shadow-xl">
-        <img src="https://via.placeholder.com/300x170/F0F0F0/000000?text=Instagram" alt="Instagram" class="rounded-md mb-4" />
-        <h2 class="text-xl font-semibold mb-2">Réseaux Sociaux</h2>
-        <p class="text-sm text-white/80 mb-4">Suivez mon quotidien et restez connectés !</p>
-        <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 transition-colors px-4 py-2 rounded-md font-semibold text-sm">Voir sur Instagram</a>
-      </div>
+    <div class="card">
+      <img src="images/youtube.jpg" alt="Vidéo">
+      <h3>Mes Vidéos</h3>
+      <p>Du contenu gaming exclusif et des moments épiques !</p>
+      <a href="#" class="youtube">Voir sur YouTube</a>
     </div>
-
-    <div class="text-center pb-12">
-      <h2 class="text-2xl font-bold mb-2">Rejoignez la Communauté !</h2>
-      <p class="text-sm text-white/70 mb-4">Ne manquez aucun de mes streams et contenus exclusifs.</p>
-      <div class="flex justify-center gap-4">
-        <a href="#" class="bg-purple-600 hover:bg-purple-700 transition-colors px-6 py-2 rounded-md font-semibold text-sm">S’abonner</a>
-        <a href="#" class="bg-white text-black hover:bg-gray-200 transition-colors px-6 py-2 rounded-md font-semibold text-sm">En savoir plus</a>
-      </div>
+    <div class="card">
+      <img src="images/social.jpg" alt="Réseaux">
+      <h3>Réseaux Sociaux</h3>
+      <p>Suivez mon quotidien et restez connectés !</p>
+      <a href="#" class="insta">Voir sur Instagram</a>
     </div>
-  </body>
+  </section>
+
+  <section class="community">
+    <h2>Rejoignez la Communauté !</h2>
+    <p>Ne manquez aucun de mes streams et contenus exclusifs.</p>
+    <div class="actions">
+      <a href="#" class="subscribe">S’abonner</a>
+      <a href="#" class="learn">En savoir plus</a>
+    </div>
+  </section>
+
+</body>
 </html>
