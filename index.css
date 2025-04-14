@@ -1,153 +1,76 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
 }
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #581c87, #000000);
-  color: white;
-  min-height: 100vh;
-  text-align: center;
-}
-
-/* En-tête */
-header {
-  padding: 60px 20px 30px;
-}
-
-header h1 {
-  font-size: 3.75rem;
-  font-weight: bold;
-}
-
-.subtitle {
-  margin-top: 0.5rem;
-  font-size: 0.875rem;
-  color: #d1b3ff;
-}
-
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 9999px;
-  border: 4px solid white;
-  margin: 2rem auto 1rem;
-}
-
-.intro {
-  font-size: 0.9rem;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #eee;
-}
-
-/* Cartes */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  padding: 3rem 2rem;
-  margin: 0 auto;
-}
-
-.card {
-  background: rgba(107, 33, 168, 0.3);
-  backdrop-filter: blur(4px);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-              0 8px 10px -6px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.card h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.card p {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 1rem;
-}
-
-.card a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  font-size: 0.875rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-  color: white;
-}
-
-.tiktok { background-color: #9146FF; }
-.youtube { background-color: #FF0000; }
-.insta { background-color: #E1306C; }
-
-.tiktok:hover { background-color: #7a3fd1; }
-.youtube:hover { background-color: #cc0000; }
-.insta:hover { background-color: #c82361; }
-
-/* Communauté */
-.community {
-  padding-bottom: 3rem;
-}
-
-.community h2 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.community p {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 1rem;
-}
-
-.community .actions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.actions a {
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.subscribe {
-  background-color: #7c3aed;
-  color: white;
-}
-
-.subscribe:hover {
-  background-color: #6d28d9;
-}
-
-.learn {
-  background-color: white;
-  color: black;
-}
-
-.learn:hover {
-  background-color: #e2e2e2;
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
